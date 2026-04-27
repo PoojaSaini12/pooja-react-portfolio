@@ -1,11 +1,9 @@
 import React from 'react'
-import NavbarApp from './NavbarAPP'
-import { blog } from '../data/blog'
 
+import { blog } from '../data/blog'
 export default function Blog() {
   return (
     <>
-    <NavbarApp/>
     <div className='main-container'>
         <div className='text-center'>Blog</div>
     </div>
