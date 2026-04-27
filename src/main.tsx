@@ -6,17 +6,21 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProjectsPage from "./pages/Projects";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+    },
+    {
+      path: "/projects",
+      element: <ProjectsPage />,
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
-  },
-
-  {
-    path: "/projects",
-    element: <ProjectsPage />,
-  },
-]);
+    basename: "/pooja-react-portfolio/",
+  }
+);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
