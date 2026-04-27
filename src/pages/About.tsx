@@ -1,5 +1,6 @@
 import React from 'react'
-import Navbar from '../layout/Navbar'
+import { Navbar } from '../layout/Navbar'
+
 
 export default function About() {
   return (

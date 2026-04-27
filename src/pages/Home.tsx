@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../layout/Navbar'
+import { Navbar } from '../layout/Navbar'
 import Header from '../layout/Header'
 import HeroBg from '../images/hero-bg.jpg'
 
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Header />
-
+      <Navbar/>
       <main>
         <section className='relative min-h-screen flex items-center overflow-hidden'>
           <div className='absolute inset-0'>
