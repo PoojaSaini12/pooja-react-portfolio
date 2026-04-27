@@ -1,8 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPhone, faLocationDot, faCircleCheck, faPaperPlane, faCircleExclamation } from '@fortawesome/free-solid-svg-icons'
-import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { faEnvelope, faPhone, faLocationDot, faPaperPlane} from '@fortawesome/free-solid-svg-icons'
+
 
 const contactInfo = [
   {
@@ -73,7 +72,6 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email"
-                  type="email"
                   className="block text-sm font-medium mb-2"
                 >
                   Email

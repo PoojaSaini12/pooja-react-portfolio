@@ -10,7 +10,7 @@ return (
 <div className='projects-container mb-18'>
     <div className='text-center mx-auto max-w-3xl mb-16'>
         <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in'>
-                                Work done in Mindrops Solutions (for client site > eRevmax Technologies) </span>
+                               Work done in Mindrops Solutions (for client site &gt; eRevmax Technologies) </span>
         <p className='text-muted-foreground animate-fade-in animation-delay-200'>
             A collection of WordPress websites crafted using Elementor, custom CSS, and jQuery, with pixel-perfect Adobe XD to WordPress conversion, responsive design, and performance optimization.
         </p>
