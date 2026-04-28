@@ -5,14 +5,14 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react";
 
 import { NavLinks } from '../Constants/navLinks';
-
+const BASE = import.meta.env.BASE_URL;
 export const Navbar = () => {
 const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <>
       <nav className="container mx-auto px-6 flex items-center justify-between">
-      <a className="text-xl font-bold tracking-tight hover:text-primary" href={'/'}>PS<span className="text-primary">.</span></a>
+      <a className="text-xl font-bold tracking-tight hover:text-primary" href={`${BASE}`}>PS<span className="text-primary">.</span></a>
       <div className="hidden md:flex items-center gap-1">
         <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
           {NavLinks.map((menu,i)=>{
@@ -25,7 +25,7 @@ const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
       </div>
 
       <div className='hidden md:block'>
-        <a href="/#contact" className='relative flex overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 px-4 py-2 text-sm'>
+        <a href={`${BASE}#contact`} className='relative flex overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 px-4 py-2 text-sm'>
           <span className='relative flex items-center justify-center gap-2'>
             Contact Me
           </span>

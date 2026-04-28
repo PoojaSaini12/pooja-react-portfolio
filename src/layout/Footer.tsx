@@ -4,7 +4,7 @@ import { faLinkedinIn,faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { NavLinks } from '../Constants/navLinks';
 import {Socialicons} from "../Constants/socialIcons"
-
+const BASE = import.meta.env.BASE_URL;
 
 function Footer() {
     const currentYear = new Date().getFullYear();
@@ -15,7 +15,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
-            <a href="#" className="text-xl font-bold tracking-tight">
+            <a href={`${BASE}`} className="text-xl font-bold tracking-tight">
               PS<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
