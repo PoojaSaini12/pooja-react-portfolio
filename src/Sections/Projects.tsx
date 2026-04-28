@@ -6,6 +6,7 @@ import project2 from "../images/project2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faLink } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+const BASE = import.meta.env.BASE_URL;
 
 export default function Projects() {
   const projectList = [
@@ -129,7 +130,7 @@ export default function Projects() {
         disabled:opacity-50 disabled:cursor-not-allowed group 
         px-8 py-4 text-lg font-medium rounded-full overflow-visible 
         animated-border"
-            to="/projects"
+            to={`${BASE}/projects`}  
           >
             View All Projects <FontAwesomeIcon icon={faArrowRight} />
           </Link>
