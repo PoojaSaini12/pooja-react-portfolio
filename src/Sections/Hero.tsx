@@ -3,12 +3,16 @@ import heroBg from "../images/hero-bg.jpg";
 import myPic from "../images/mypic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Socialicons} from "../Constants/socialIcons"
+import resume from '../files/PoojaSaini_UIdev_Resume.pdf'
 import {
   faArrowRight,
   faDownload,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
-import resume from "../files/PoojaSaini_UIdev_Resume.pdf";
+
+
+const BASE = import.meta.env.BASE_URL;
+
 export default function Hero() {
   const mySkills = [
     "HTML5",
@@ -109,7 +113,7 @@ export default function Hero() {
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
               <a
-                href="#contact"
+                href={`${BASE}#contact`}
                 className="relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 px-8 py-4 text-lg "
               >
                 <span className="relative flex items-center justify-center gap-2">
