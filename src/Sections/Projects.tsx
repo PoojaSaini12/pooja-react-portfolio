@@ -130,7 +130,7 @@ export default function Projects() {
         disabled:opacity-50 disabled:cursor-not-allowed group 
         px-8 py-4 text-lg font-medium rounded-full overflow-visible 
         animated-border"
-            to={`${BASE}/projects`}  
+            to={`/projects`}  
           >
             View All Projects <FontAwesomeIcon icon={faArrowRight} />
           </Link>
