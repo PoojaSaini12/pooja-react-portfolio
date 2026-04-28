@@ -2,6 +2,9 @@ import React from "react";
 
 import project1 from "../images/project1.jpg";
 import project2 from "../images/project2.jpg";
+import project3 from "../images/aquevix/pro-l.jpg";
+
+import { AquevixProjects } from "../data/ProjectsData/AquevixProjects";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faLink } from "@fortawesome/free-solid-svg-icons";
@@ -9,32 +12,7 @@ import { Link } from "react-router-dom";
 const BASE = import.meta.env.BASE_URL;
 
 export default function Projects() {
-  const projectList = [
-    {
-      img: project1,
-      link: "https://kuberwms.com/",
-      title: "Kuber Warehouse Managemenet",
-      description:
-        "A powerful warehouse and order fulfillment platform that simplifies inventory and logistics operations.",
-      tags: ["React", "Tailwind CSS", "JavaScript", "Responsive Design"],
-    },
-    {
-      img: project2,
-      link: "https://yoursafehub.com/",
-      title: "Your Save Hub",
-      description:
-        "A secure platform for anonymous employee reporting, helping organizations manage workplace issues with transparency and efficiency.",
-      tags: ["React", "Tailwind CSS", "JavaScript", "Responsive Design"],
-    },
-    {
-      img: project2,
-      link: "https://www.aquevix.com/",
-      title: "Aquevix",
-      description:
-        "Transforming ideas into scalable digital solutions with expert web and mobile development.",
-      tags: ["React", "Tailwind CSS", "JavaScript", "Responsive Design"],
-    },
-  ];
+
 
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
@@ -62,7 +40,7 @@ export default function Projects() {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-3 gap-8">
-          {projectList.map((project, projectid) => {
+          {AquevixProjects.map((project, projectid) => {
             return (
               <div
                 className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
