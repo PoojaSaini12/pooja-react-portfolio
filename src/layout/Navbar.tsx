@@ -4,13 +4,7 @@ import { faL } from '@fortawesome/free-solid-svg-icons';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react";
 
-  const NavLinks = [
-    { href: "/#about", label: "About Me" },
-    { href: "/#projects", label: "Projects" },
-    { href: "/#experience", label: "Experience" },
-    { href: "/#testimonials", label: "Testimonials" }
-  ];
-
+import { NavLinks } from '../Constants/navLinks';
 
 export const Navbar = () => {
 const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

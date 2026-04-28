@@ -1,20 +1,10 @@
 import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faLinkedinIn,faGithub, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn,faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { NavLinks } from '../Constants/navLinks';
+import {Socialicons} from "../Constants/socialIcons"
 
-const socialLinks = [
-  { icon: faWhatsapp, href: "https://wa.me/919953455706", label: "faWhatsapp" },
-  { icon: faLinkedinIn, href: "https://www.linkedin.com/in/poojasaini12/", label: "LinkedIn" },
-  { icon: faGithub, href: "https://github.com/PoojaSaini12/", label: "GitHub" },
-];
-
-const footerLinks = [
-  { href: "/#about", label: "About" },
-  { href: "/#projects", label: "Projects" },
-  { href: "/#experience", label: "Experience" },
-  { href: "/#testimonials", label: "Testimonials" },
-  { href: "/#contact", label: "Contact" },
-];
 
 function Footer() {
     const currentYear = new Date().getFullYear();
@@ -26,16 +16,16 @@ function Footer() {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              PM<span className="text-primary">.</span>
+              PS<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Pedro Machado. All rights reserved.
+              © {currentYear} Pooja Saini. All rights reserved.
             </p>
           </div>
 
           {/* Links */}
           <nav className="flex flex-wrap justify-center gap-6">
-            {footerLinks.map((link) => (
+            {NavLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -48,11 +38,11 @@ function Footer() {
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
-            {socialLinks.map((social) => (
+            {Socialicons.map((social, fIndx) => (
               <a
-                key={social.label}
+                key={fIndx}
                 href={social.href}
-                aria-label={social.label}
+                target='_blank'
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
               >
                 <FontAwesomeIcon icon={social.icon} />

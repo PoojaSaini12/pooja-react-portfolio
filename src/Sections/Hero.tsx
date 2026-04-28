@@ -2,20 +2,13 @@ import React from "react";
 import heroBg from "../images/hero-bg.jpg";
 import myPic from "../images/mypic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Socialicons} from "../Constants/socialIcons"
 import {
-  faEnvelope,
   faArrowRight,
   faDownload,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedinIn,
-  faWhatsapp,
-  faBehance,
-} from "@fortawesome/free-brands-svg-icons";
 import resume from "../files/PoojaSaini_UIdev_Resume.pdf";
-
 export default function Hero() {
   const mySkills = [
     "HTML5",
@@ -48,13 +41,7 @@ export default function Hero() {
     "GitHub Copilot",
   ];
 
-  const Socialicons = [
-    { icon: faGithub, href: "https://github.com/PoojaSaini12/" },
-    { icon: faLinkedinIn, href: "https://www.linkedin.com/in/poojasaini12/" },
-    { icon: faWhatsapp, href: "https://wa.me/919953455706" },
-    { icon: faEnvelope, href: "mailto:pooja.saini12@gmail.com" },
-    { icon: faBehance, href: "https://www.behance.net/poojasaini5" },
-  ];
+
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -95,7 +82,7 @@ export default function Hero() {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Frontend Developer • React Specialist
+                Frontend / UI Developer
               </span>
             </div>
 
@@ -154,6 +141,7 @@ export default function Hero() {
                   <a
                     key={idxs}
                     href={iconv.href}
+                    target='_blank'
                     className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                   >
                     <FontAwesomeIcon className="w-5 h-5" icon={iconv.icon} />
