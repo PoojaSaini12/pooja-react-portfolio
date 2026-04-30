@@ -3,7 +3,7 @@ import heroBg from "../images/hero-bg.jpg";
 import myPic from "../images/mypic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Socialicons} from "../Constants/socialIcons"
-import resume from '../files/PoojaSaini_UIdev_Resume.pdf'
+import resume from '../files/Pooja-Saini-Frontend-Developer.pdf'
 import {
   faArrowRight,
   faDownload,
