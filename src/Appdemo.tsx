@@ -15,6 +15,7 @@ import FaqProps from './layout/FaqProps'
 import Looping from './layout/Looping'
 import Tabs from './layout/Tabs'
 import NavbarApp from './layout/NavbarAPP'
+import Todo from './demoPages/todo'
 
 function Appdemo() {
 
@@ -30,6 +31,11 @@ function Appdemo() {
          <Faq/>
          
          <Tabs/>
+
+         <Todo/>
+
+
+  
          
          <Looping/>
       
