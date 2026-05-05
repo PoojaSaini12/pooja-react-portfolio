@@ -15,13 +15,15 @@ import FaqProps from './layout/FaqProps'
 import Looping from './layout/Looping'
 import Tabs from './layout/Tabs'
 import NavbarApp from './layout/NavbarAPP'
-import Todo from './demoPages/todo'
+import Todo from './demoPages/Todo'
 
 function Appdemo() {
 
   return (
     <>
     <header className='py-5'>
+      <div className='container mx-auto px-6 pt-32 pb-20 relative z-10>'>
+          <Todo/>
          <NavbarApp>
           <h2>I am Navbars children</h2>
          </NavbarApp>
@@ -31,13 +33,17 @@ function Appdemo() {
          <Faq/>
          
          <Tabs/>
+         
+        
+          
 
-         <Todo/>
 
 
   
          
          <Looping/>
+      </div>
+      
       
 
          <div className='container mx-auto px-6'>
