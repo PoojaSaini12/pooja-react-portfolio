@@ -3,7 +3,6 @@ import heroBg from "../images/hero-bg.jpg";
 import myPic from "../images/mypic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Socialicons} from "../Constants/socialIcons"
-import resume from '../files/Pooja-Saini-Frontend-Developer.pdf'
 import {
   faArrowRight,
   faDownload,
@@ -122,7 +121,7 @@ export default function Hero() {
               </a>
               <a
                 target="_blank"
-                href={resume}
+                href={`${import.meta.env.BASE_URL}Pooja-Saini-Frontend-Developer.pdf`}
                 className="relative bg-transparent border border-border 
         text-foreground hover:border-primary/50 transition-all 
         duration-1000 focus:outline-none focus-visible:ring-2 
