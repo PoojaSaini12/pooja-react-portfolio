@@ -163,18 +163,18 @@ export let AntlyProjects= [
         },
         {
             img: p24,
-            link: "https://mcwilliams-dev.enschool.org/",
+            link: "https://www.jtmcwilliamsjets.org/",
             title: "J.t Mc Williams Elementary School",
         },
 
          {
             img: p25,
-            link: "https://reachacad-dev.enschool.org/",
+            link: "https://www.reachacs.org/",
             title: "Reach Academy Charter School",
         },
         {
             img: p26,
-            link: "https://deapetele-dev.enschool.org/",
+            link: "https://www.dpriseacademy.org/",
             title: "Dean Petersen Rise Academy",
         },
 
