@@ -1,6 +1,13 @@
 import React from 'react'
 
-import { blog } from '../data/blog'
+import type { Blog as BlogType } from "../data/blog";
+import { blog } from "../data/blog";
+
+type BlogCardProps = {
+  BlogItems: BlogType;
+};
+
+
 export default function Blog() {
   return (
     <>
@@ -10,9 +17,9 @@ export default function Blog() {
 
     <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6" >
-            {blog.map((v,i) =>{
+            {blog.map((item) =>{
                 return(
-                    <BlogCard BlogItems={v} key={i}/> 
+                    <BlogCard BlogItems={item} key={item.id}/> 
                 )
             })}
            
@@ -24,7 +31,7 @@ export default function Blog() {
   )
 }
 
-function BlogCard({BlogItems}){
+function BlogCard({BlogItems} : BlogCardProps){
     return(
         
             <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition duration-300">

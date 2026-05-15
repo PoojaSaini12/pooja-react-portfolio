@@ -1,13 +1,10 @@
-type Blog = {
+export type Blog = {
    userId: number,
     id: number,
     img?: string,
     title: string,
     body: string,
 };
-
-
-
 
 export const blog : Blog[] =[
   {
