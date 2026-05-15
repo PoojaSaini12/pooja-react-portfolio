@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen overflow-x-hidden bg-[var(--background)] text-[var(--foreground)] transition-colors duration-500">
+      <div className="min-h-screen overflow-x-hidden">
         <Header />
         <main>
           <Hero />
