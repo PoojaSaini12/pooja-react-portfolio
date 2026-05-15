@@ -3,7 +3,6 @@ import heroBg from "../images/hero-bg.jpg";
 import myPic from "../images/mypic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Socialicons} from "../Constants/socialIcons"
-import { useState, useEffect } from "react";
 import {
   faArrowRight,
   faDownload,
@@ -45,17 +44,6 @@ export default function Hero() {
     "GitHub Copilot",
   ];
 
-const [lightMode, setLightMode] = useState(false);
-
-useEffect(() => {
-  if (lightMode) {
-    document.documentElement.classList.remove("dark");
-    document.documentElement.classList.add("light");
-  } else {
-    document.documentElement.classList.remove("light");
-    document.documentElement.classList.add("dark");
-  }
-}, [lightMode]);
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -93,13 +81,10 @@ useEffect(() => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8">
-            <div className="animate-fade-in flex gap-2">
+            <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Frontend / UI Developer
-              </span>
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-                <button className='' onClick={() => setLightMode(!lightMode)}>{lightMode ? "🌙 Dark" : "☀ Light"}</button>
+                pppFrontend / UI Developer
               </span>
             </div>
 
