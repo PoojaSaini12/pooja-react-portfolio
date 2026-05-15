@@ -1,4 +1,11 @@
-export let faqItems=[
+type Faq = {
+id: number,
+ques: string,
+ans: string,
+
+}
+
+export const faqItems : Faq []=[
   {
     "id": 1,
     "ques": "Q.1 sunt aut facere repellat provident occaecati excepturi optio reprehenderit ?",

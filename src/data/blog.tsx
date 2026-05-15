@@ -1,4 +1,15 @@
-export let blog=[
+type Blog = {
+   userId: number,
+    id: number,
+    img?: string,
+    title: string,
+    body: string,
+};
+
+
+
+
+export const blog : Blog[] =[
   {
     "userId": 1,
     "id": 1,

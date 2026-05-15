@@ -8,8 +8,15 @@ import p7 from '../../images/erevmax/7-l.jpg'
 import p8 from '../../images/erevmax/8-l.jpg'
 import p9 from '../../images/erevmax/9-l.jpg'
 
+type Project = {
+        img: string,
+        link: string,
+        title: string,
 
-export let MindropsProjects= [
+}
+
+
+export const MindropsProjects : Project[]= [
     {
             img: p1,
             link: "https://erevmax.com/",

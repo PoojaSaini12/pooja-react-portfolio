@@ -2,7 +2,16 @@ import p1 from "../../images/aquevix/3-l.jpg";
 import p2 from "../../images/aquevix/2-l.jpg";
 import p3 from "../../images/aquevix/pro-l.jpg";
 
-export let AquevixProjects = [
+type Project = {
+  img: string,
+  link: string,
+  title: string,
+  description: string,
+  tags: string[]
+
+}
+
+export const AquevixProjects : Project[] = [
   {
     img: p1,
     link: "https://kuberwms.com/",

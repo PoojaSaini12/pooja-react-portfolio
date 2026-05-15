@@ -27,7 +27,14 @@ import p27 from '../../images/antly/27-l.jpg'
 import p28 from '../../images/antly/28-l.jpg'
 
 
-export let AntlyProjects= [
+type Project = {
+    img: string,
+    link: string,
+    title: string
+};
+
+
+export const AntlyProjects : Project[]= [
     {
             img: p1,
             link: "https://www.cascadeshs.org/",

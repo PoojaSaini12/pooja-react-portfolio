@@ -11,9 +11,13 @@ import p10 from '../../images/elk/apadiss-s.jpg'
 import p11 from '../../images/elk/chanakya-s.jpg'
 
 
+type Project = {
+    img: string,
+    link: string,
+    title: string,
+};
 
-
-export let ElkEducationsProjects= [
+export const ElkEducationsProjects : Project[] = [
     {
             img: p1,
             link: "http://www.authenu.com/",

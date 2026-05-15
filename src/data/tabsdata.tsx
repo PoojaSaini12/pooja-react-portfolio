@@ -1,4 +1,9 @@
-export let tabsdata=[
+type TabsData = {
+  title: string,
+  description: string,
+};
+
+export const tabsdata : TabsData []=[
   {
     "title": "Vision",
     "description": "Vision quia et recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
