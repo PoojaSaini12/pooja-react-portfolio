@@ -1,4 +1,35 @@
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+
 @import "tailwindcss";
 
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --bg-primary-dark: #FF0000;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f0f0f;
+  --muted-foreground: #6b7280;
+  --surface: rgba(255, 255, 255, 0.1);
+  --border: rgba(0, 0, 0, 0.15);
+}
+
+.dark {
+  --background: #0f0f0f;
+  --foreground: #ffffff;
+  --muted-foreground: #9ca3af;
+  --surface: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.15);
+}
+
+.bg-primary-dark{
+     --bg-primary-dark: #FF0000;
+}
 
 

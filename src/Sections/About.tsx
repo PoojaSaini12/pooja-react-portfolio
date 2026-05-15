@@ -50,7 +50,7 @@ export default function About() {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
               Developing the future,
-              <span className="font-serif italic font-normal text-white">
+              <span className="font-serif italic font-normal dark:text-white light:text-black">
                 {" "}
                 one component at a time.
               </span>

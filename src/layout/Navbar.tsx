@@ -9,10 +9,15 @@ const BASE = import.meta.env.BASE_URL;
 export const Navbar = () => {
 const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+
+
   return (
     <>
       <nav className="container mx-auto px-6 flex items-center justify-between">
-      <a className="text-xl font-bold tracking-tight hover:text-primary" href={`${BASE}`}>PS<span className="text-primary">.</span></a>
+        <div>
+      <a className="text-xl font-bold tracking-tight hover:text-primary" href={`${BASE}`}>PS<span className="text-primary">.</span></a> 
+        </div>
+
       <div className="hidden md:flex items-center gap-1">
         <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
           {NavLinks.map((menu,i)=>{
@@ -29,7 +34,9 @@ const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
           <span className='relative flex items-center justify-center gap-2'>
             Contact Me
           </span>
+          
         </a>
+   
       </div>
 
                 {/* Mobile Menu Button */}
